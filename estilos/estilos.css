@@ -194,8 +194,17 @@ section h2  {
 
 /* ¿Quienes somos? */
 
+
+
 .section-article{
     width: 100vw;
+}
+
+.container-quienes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: ;
 }
 
 .articlesection {
@@ -219,24 +228,55 @@ section h2  {
     align-items: center;
     padding: 10px;
     font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    margin: 15px;
+    font-weight: bolder;
+    color: blueviolet;
 }
 
 .carousel {
     margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.tamaño-imagen {
+    width: 350px;
+    height: 220px;
+    border: 2px solid white;
+
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar a {
+    color: blueviolet;
+    background-color: black;
 }
 
 /** Contacto **/
 
 .contacto {
     height: 100vh;
+    
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 fieldset {
     background-color: rgb(139, 102, 118);
-    width: 20%;
+    width: 30%;
     margin-top: 50px;
-    border-radius: 10px;
-    
+    border-radius: 20px;
+
     
     
 }
@@ -245,19 +285,17 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding-block-start: 0.35em;
     padding-inline-start: 0.75em;
     padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
+    padding-block-end: 0.625em; 
     min-inline-size: min-content;
     border-width: 2px;
     border-style: groove;
     border-color: rgb(19, 18, 18);
     border-image: initial;
     margin: 15px;
-    margin-left: 540px;
-    height: 390px;
+   
 }
 
 .leyenda {
@@ -267,21 +305,33 @@ fieldset {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-leyend a {
-    color:black
-}
+
 
 .nombre {
     padding-bottom: 10px;
     padding-top: 5px;
+    padding-left: 8px;
 }
 
 .apellido {
     padding-top: 1px;
     padding-bottom: 10px;
+    padding-left: 8px;
 }
 
-/* Ubicacion*/
+.telefono {
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+.texto {
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+/* Ubicacion */
 
 .mapa{
     margin: 15px 0 15px 0;
@@ -342,7 +392,7 @@ leyend a {
     }
 
     .mapa{
-        width: 400px;
+    width: 400px;
     display: flex;
     justify-content: center;
     }
@@ -376,14 +426,6 @@ header {
     margin-bottom: 15px;
 }
 
-main {
-    height: 788px;
-}
-
-footer {
-    margin-top: 1350px;
-    height: 100px;
-}
 
 
 }
@@ -392,11 +434,40 @@ footer {
     .body {
         background-color: black; 
     }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: ;
+    }
+    .miles {
+        
+        margin-right: 170px;
+    }
+    .logo {
+        font-size: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .tamaño-imagen {
+        width: 250px;
+        height: 220px;
+    
+    }
 }
 @media (max-width: 320px) {
     .body {
         background-color: black; 
     }
+
+
 }
+
+
 
 
