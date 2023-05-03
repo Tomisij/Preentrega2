@@ -197,21 +197,19 @@ section h2  {
 
 
 .section-article{
-    width: 100vw;
 }
 
 .container-quienes {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: ;
+    justify-content: center; 
+    width: 100vw;   
 }
 
 .articlesection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .articlesection .h2-quienessomos {
@@ -261,7 +259,7 @@ section h2  {
 
 .contacto {
     height: 100vh;
-    
+    width: 100vw;
 }
 
 .section-form {
@@ -333,7 +331,7 @@ fieldset {
 
 /* Ubicacion */
 
-.mapa{
+.mapa {
     margin: 15px 0 15px 0;
     display: flex;
     justify-content: center;
@@ -343,7 +341,7 @@ fieldset {
 
 
 
-/* Desktop First */
+/* Responsive */
 
 
 @media (max-width: 1200px) {
@@ -434,17 +432,37 @@ header {
     .body {
         background-color: black; 
     }
+
+    .grilla{
+        width: 100vw;
+    }
+
     header {
         display: flex;
         flex-direction: column;
-        justify-content: ;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
     }
-    .miles {
-        
+
+    .miles-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-right: 170px;
     }
+
     .logo {
         font-size: 30px;
+    }
+
+    .generos__gen {
+        width: 80%;
+    }
+        
+
+    .main-home {
+        width: 100vw;
     }
 
     footer {
@@ -452,6 +470,7 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 100%;
         
     }
     .tamaño-imagen {
@@ -460,6 +479,7 @@ header {
     
     }
 }
+
 @media (max-width: 320px) {
     .body {
         background-color: black; 
